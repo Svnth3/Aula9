@@ -41,7 +41,7 @@ def buscar_maior():
 
 
 def proc_vendedor(nome):
-    resposta = ' '
+    resposta = ''
     vl = 0
     for cadastro in lista_cadastro:
         if cadastro['Nome'] == nome:
@@ -73,9 +73,9 @@ print(f'Maior venda: R${maior_venda:.2f}, vendedor: {maior_vendedor}.')
 
 # Exemplo 4 - Buscar Vendedor 
 pergunta = input("informe nome do vendedor: ")
-nome_vendedor, vendedor_valor = proc_vendedor(pergunta)
+nome_vendedor, valor20 = proc_vendedor(pergunta)
 
 if nome_vendedor:
-    print(nome_vendedor, vendedor_valor)
+    print(nome_vendedor, valor20)
 else:
     print("Não encontrado")
